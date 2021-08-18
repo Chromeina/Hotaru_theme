@@ -2,7 +2,7 @@
   <tr class="tableRow" @click="collapsed = !collapsed">
     <td>
       <div class="ui progress" :class="{'success': getStatus, 'error': !getStatus}">
-        <div class="bar" style="width: 100%"><span> {{ getStatus ? '运行中' : '维护中' }} </span>
+        <div class="bar" style="width: 100%"><span> {{ getStatus ? '運作中' : '維修中' }} </span>
         </div>
       </div>
     </td>
@@ -22,21 +22,21 @@
     <td>
       <div class="ui progress" :class="getProcessBarStatus(getCpuStatus)">
         <div class="bar" :style="{'width': `${getCpuStatus.toString()}%`}">
-          {{ getStatus ? `${getCpuStatus.toString()}%` : '维护中' }}
+          {{ getStatus ? `${getCpuStatus.toString()}%` : '維修中' }}
         </div>
       </div>
     </td>
     <td>
       <div class="ui progress" :class="getProcessBarStatus(getRAMStatus)">
         <div class="bar" :style="{'width': `${getRAMStatus.toString()}%`}">
-          {{ getStatus ? `${getRAMStatus.toString()}%` : '维护中' }}
+          {{ getStatus ? `${getRAMStatus.toString()}%` : '維修中' }}
         </div>
       </div>
     </td>
     <td>
       <div class="ui progress" :class="getProcessBarStatus(getHDDStatus)">
         <div class="bar" :style="{'width': `${getHDDStatus.toString()}%`}">
-          {{ getStatus ? `${getHDDStatus.toString()}%` : '维护中' }}
+          {{ getStatus ? `${getHDDStatus.toString()}%` : '維修中' }}
         </div>
       </div>
     </td>
@@ -44,15 +44,15 @@
   <tr class="expandRow">
     <td colspan="12">
       <div :class="{collapsed}" :style="{'max-height': getStatus ? '' : '0'}">
-        <div id="expand_mem">内存信息: {{
+        <div id="expand_mem">記憶體訊息: {{
             getStatus ? `${expandRowByteConvert(server.memory_used * 1024)} / ${expandRowByteConvert(server.memory_total * 1024)}` : '–'
           }}
         </div>
-        <div id="expand_swap">交换分区: {{
+        <div id="expand_swap">Swap: {{
             getStatus ? `${expandRowByteConvert(server.swap_used * 1024)} / ${expandRowByteConvert(server.swap_total * 1024)}` : '–'
           }}
         </div>
-        <div id="expand_hdd">硬盘信息: {{
+        <div id="expand_hdd">硬碟訊息: {{
             getStatus ? `${expandRowByteConvert(server.hdd_used * 1024 * 1024)} / ${expandRowByteConvert(server.hdd_total * 1024 * 1024)}` : '–'
           }}
         </div>
