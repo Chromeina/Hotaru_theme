@@ -33,3 +33,4 @@ jobs:
           prerelease: false
           title: ${{ steps.build.outputs.version }}
           files: hotaru-theme.zip
+
