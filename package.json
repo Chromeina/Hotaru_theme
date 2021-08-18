@@ -1,10 +1,10 @@
 {
   "name": "hotaru_theme",
-  "version": "0.4.2",
+  "version": "0.4.2.1",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/CokeMine/Hotaru_theme.git"
+    "url": "https://github.com/Chromeina/Hotaru_theme.git"
   },
   "scripts": {
     "serve": "vue-cli-service serve",
