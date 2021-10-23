@@ -1,14 +1,14 @@
 # Hotaru_theme
 
-基于Vue 3.0和Semantic UI打造的”船新“ServerStatus主题，借鉴了一点KRATOS主题的样式，模仿了Loc大佬分享的主题样式。
+基於Vue 3.0和Semantic UI打造的”全新“ServerStatus主題，借鑒了一點KRATOS主題的樣式，模仿了Loc大佬分享的主題樣式。
 
-本仓库存放了ServerStatus-Hotaru默认主题的源码。
+本倉庫存放了ServerStatus-Hotaru預設主題的原碼。
 
-关于本仓库默认使用的图片素材的说明请见下方项目仓库。
+關於本倉庫預設使用的圖片素材的說明請見下方項目倉庫。
 
-关于自定义主题：
+關於自定義主題：
 
-如果仅修改标题、副标题、页脚和更新数据的间隔，可以直接修改根目录下的`config.js`文件。其他如更换素材、背景图片、对其他文字的修改等建议修改本仓库代码并重新打包。
+如果僅修改標題、副標題、頁腳和更新數據的間隔，可以直接修改根目錄下的`config.js`文件。其他如更換素材、背景圖片、對其他文字的修改等建議修改本倉庫程式碼並重新打包。
 
 ServerStatus-Hotaru: https://github.com/CokeMine/ServerStatus-Hotaru
 
