@@ -1,7 +1,13 @@
 name: Release
 on:
   workflow_dispatch:
-    inputs:
+
+  push:
+    branches:
+      - main
+    paths:
+      - package.json
+
 jobs:
   Release:
     runs-on: ubuntu-latest
